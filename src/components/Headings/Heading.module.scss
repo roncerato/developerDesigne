@@ -1,3 +1,6 @@
+$heading-primary: #42446E;
+$heading-secondary: #000; 
+
 .h1 {
     font-size: 5.8rem;
     font-weight: 700;
@@ -9,7 +12,7 @@
 .h2 {
     font-size: 4.8rem;
     font-weight: 700;
-    line-height: 2.6rem;
+    line-height: 1;
     color: $heading-primary
 
 }
@@ -17,6 +20,6 @@
 .h3 {
     font-size: 2.8rem;
     font-weight: 500;
-    line-height: 2.6rem;
+    line-height: 1;
     color: $heading-secondary
 }
