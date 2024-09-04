@@ -1,0 +1,104 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 4.1rem;
+    &-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        button{
+            background-color: transparent;
+            display: none;
+        }
+    }
+}
+.navigation {
+    margin-left: auto;
+    margin-right: 5.1rem;
+    max-width: 610px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item {
+}
+.top-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.222);
+    display: flex;
+    justify-content: end;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 999999;
+
+    &.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navigation {
+        padding-top: 4.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        text-align: end;
+        gap: 3rem;
+
+        a {
+            display: block !important;
+            width: fit-content;
+            margin-left: auto;
+        }
+    }
+    .social-list{
+    margin-left: auto;
+    align-self: flex-end;
+    }
+}
+
+.top-navigation-container {
+    flex: 0 1 350px;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    display: grid;
+}
+
+.top-navigation.show .top-navigation-container {
+    transform: translateX(0);
+}
+
+.navigation {}
+
+
+.nav-list {}
+
+.nav-item {
+    text-transform: uppercase;
+
+    p.t-2 {
+        color: #999
+    }
+}
+
+.hide-nav-btn {
+    width: 16px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    img {
+        width: 100%;
+        height: 100%;
+
+    }
+}
