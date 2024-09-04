@@ -1,0 +1,24 @@
+.stack-section {
+}
+.stack-container {
+    h2, p{
+        text-align: center;
+    }
+    p{
+        margin: 5rem 0 14rem;
+    }
+}
+.stack-list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5rem;
+    justify-items: center;
+}
+
+.stack-item{
+    width: 100%;
+    svg{
+        width: 100%;
+        height: auto;
+    }
+}
