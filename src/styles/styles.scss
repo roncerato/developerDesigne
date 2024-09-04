@@ -1,0 +1,43 @@
+$heading-primary: #42446E;
+$heading-secondary: #000; 
+$text-primary: #666;
+$text-secondary: #000;
+
+
+@import "nullstyle.scss";
+
+html, body{
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    font-size: 10px;
+    position: relative;
+    top: 0;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: #dbdbdb;
+        padding: 2rem 0;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #60606e;
+        border-radius: 50px;
+        height: 1px;
+        width: 1px;
+    }
+}
+.container{
+    margin: 0 auto;
+    max-width: 1204px;
+    padding: 0 2rem;
+}
+
+@import "./social.scss";
+@import "./header.scss";
+@import "./hero.scss";
+@import "./stack.scss";
+@import "./projects.scss";
+@import "./footer.scss";
+@import "./media.scss"
+
