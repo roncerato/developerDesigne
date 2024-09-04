@@ -1,0 +1,80 @@
+.projects-section {
+    padding: 20rem 0;
+}
+
+.projects-container {
+
+    >h2,
+    >p {
+        text-align: center;
+    }
+
+    >p {
+        margin: 5rem 0 10rem;
+    }
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.7rem;
+    justify-content: space-between;
+
+}
+
+.project-item {
+    box-shadow: 2px 2px 100px 0px hsla(0, 0%, 0%, 0.2);
+    background-color: #fff;
+    border-radius: 28px;
+
+    &-img-wrap {
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &-main {
+        padding: 2.8rem;
+
+        p:nth-child(3) {
+            padding: 1.2rem 0 2.1rem;
+        }
+    }
+
+    h3 {
+        margin: 0 0 1.7rem;
+    }
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    span {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        color: #000 !important;
+        text-decoration: underline;
+    }
+
+    a:nth-child(1) {
+        span::before {
+            content: url(/svg/chains.svg);
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+
+    a:nth-child(2) {
+        span::before {
+            content: url(/svg/github.svg);
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+}
