@@ -17,11 +17,11 @@ $dmsans: "DM Sans", sans-serif;
     @include font(1.4rem, 300,#42446E, $poppins)
 }
 .s {
-    @include font(1.6rem, 400,#42446E, $poppins)
+    @include font(1.6rem, 400, #42446E, $poppins)
 }
 
 .m {
-    @include font(1.8rem, 400, #666, $dmsans)
+    @include font(1.8rem, 400, #42446E, $dmsans)
 }
 
 .l {
